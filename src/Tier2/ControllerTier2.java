@@ -37,22 +37,19 @@ public class ControllerTier2 extends UnicastRemoteObject implements ITier2 {
 		if(account == null)
 			return false;
 		
-		else if (amount <= 0.0 || amount > account.getBalance())
+		else if (amount <= 0.0)
 			return false;
 		
 		else {
-			
-			account.updateBalance(-amount);
+			try {
+				account.withdraw(amount, account.getAccountCurrency());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			tier3.updateAccount(account);
 			System.out.println("Now you have: " + tier3.getAccount(acNumber).getBalance());
 			return true;
 		}
-		
-
-
 	}
-	
-
-
 }
 
