@@ -1,4 +1,4 @@
-package Tier1;
+package Tier1_BranchCLient;
 
 import java.rmi.Naming;
 import java.util.Scanner;

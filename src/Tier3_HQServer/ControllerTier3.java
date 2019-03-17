@@ -1,9 +1,8 @@
-package Tier3;
+package Tier3_HQServer;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.Scanner;
 
 import SharedInterfaces.ITier3;
 import SharedModel.Account;
@@ -14,7 +13,7 @@ public class ControllerTier3 extends UnicastRemoteObject implements ITier3{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private Account acAndrei = new Account(1234,5000);
+	private Account acAndrei = new Account(2302, "Andrei Mungiu","Borgergade 5",9615315,98465133654.00,"DKK");
 	
 	public ControllerTier3() throws RemoteException 
 	{

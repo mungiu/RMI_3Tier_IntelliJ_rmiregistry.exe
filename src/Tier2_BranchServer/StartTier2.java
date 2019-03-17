@@ -1,8 +1,6 @@
-package Tier2;
+package Tier2_BranchServer;
 
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 
 public class StartTier2 {
 

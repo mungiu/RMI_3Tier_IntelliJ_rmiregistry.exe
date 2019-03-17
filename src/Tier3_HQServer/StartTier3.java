@@ -1,10 +1,6 @@
-package Tier3;
+package Tier3_HQServer;
 
-import java.net.MalformedURLException;
 import java.rmi.Naming;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
-import java.util.Scanner;
 
 import SharedInterfaces.ITier2;
 
