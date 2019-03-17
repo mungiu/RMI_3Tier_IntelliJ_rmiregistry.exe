@@ -1,9 +1,10 @@
 package SharedInterfaces;
 
-import java.rmi.Remote;
+import SharedModel.AccountCurrency;
+
 import java.rmi.RemoteException;
 
-public interface ITier2 extends Remote {
+public interface ITier2 extends Observer<AccountCurrency> {
 	
 	public boolean withdraw(int acNumber, double amount) throws RemoteException;
 	

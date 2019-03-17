@@ -1,11 +1,12 @@
 package SharedInterfaces;
 
-import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 import SharedModel.Account;
+import SharedModel.AccountCurrency;
+import Tier3_HQServer.Observable;
 
-public interface ITier3 extends Remote {
+public interface ITier3 extends Observable<AccountCurrency> {
 	
 	public Account getAccount(int acNumber) throws RemoteException;
 	

@@ -16,7 +16,6 @@ public class StartTier2 {
 		{
 			e.printStackTrace();
 		}
-
 	}
 
 }
